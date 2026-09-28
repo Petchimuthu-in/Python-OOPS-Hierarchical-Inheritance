@@ -1,0 +1,20 @@
+class Bank:
+    def details(self):
+        print("Bank: State Bank of India")
+
+class SavingsAccount(Bank):
+    def savings(self):
+        print("Account: Savings")
+        print("Minimum Balance: 1000")
+
+class CurrentAccount(Bank):
+    def current(self):
+        print("Account: Current")
+        print("Minimum Balance: 5000")
+
+s = SavingsAccount()
+c = CurrentAccount()
+
+s.details()
+s.savings()
+c.current()
